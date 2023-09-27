@@ -14,10 +14,9 @@ body {
 }
 .blog{
   border: 1px solid black;
-  width: 20%;
-  margin: 2rem;
-  padding: 2rem;
-  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  width: 90vw;
 }
 .bh1{
   color:rgb(170, 12, 102);
