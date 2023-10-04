@@ -7,7 +7,12 @@ const BlogDetails = () => {
 
   return (
     <div className="blog-details">
-      { isPending && <div>Loading...</div> }
+     {isPending && (
+  <div className="loading-area">
+    <div className="loading-spinner"></div>
+    <div><h2 className="loading">Ładowanie....</h2></div>
+  </div>
+)}
       { error && <div>{ error }</div> }
       { blog && (
         <article>
