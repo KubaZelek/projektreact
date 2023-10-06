@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
@@ -24,10 +25,10 @@ const BlogDetails = () => {
       { error && <div>{ error }</div> }
       { blog && (
         <article className="bd">
-          <h2>{ blog.title }</h2>
-          <p>Written by { blog.author }</p>
+          <h2 className="bh2">{ blog.title }</h2>
+          <p>Od: { blog.author } dla: {blog.personFor}</p>
           <div>{ blog.body }</div>
-          {!isPending && <button onClick={handleDelete} className="btn-enabled">Usuwanie</button>}
+          {!isPending && <button onClick={handleDelete} className="btn-enabled btn-done"> <span>Zrobione</span> <span className="check"> <Check size={48}/></span> </button>}
         {isPending && <button className="btn-disabled" disabled>Dodawanie...</button>}
         </article>
       )}

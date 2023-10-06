@@ -14,7 +14,15 @@ const Home = () => {
     <div><h2 className="loading">Ładowanie....</h2></div>
   </div>
 )}
-      { blogs && <BlogList blogs={blogs} /> }
+      {!isPending && (
+  Array.isArray(blogs) && blogs.length > 0 ? (
+    <BlogList blogs={blogs} />
+  ) : (
+    <h1>Nie ma na dziś żadnych zadań :] (fajrant)</h1>
+  )
+)}
+
+
     </div>
   );
 }

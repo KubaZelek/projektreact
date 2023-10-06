@@ -1,25 +1,3 @@
 {
-  "blogs": [
-    {
-      "title": "qsq",
-      "body": "dqw",
-      "author": "Pati",
-      "personFor": "Pati",
-      "id": 5
-    },
-    {
-      "title": "DWDWD",
-      "body": "ffwf",
-      "author": "Zelek",
-      "personFor": "Pati",
-      "id": 12
-    },
-    {
-      "title": "Siemano",
-      "body": "Wyrzuć smieci",
-      "author": "Pati",
-      "personFor": "Zelek",
-      "id": 13
-    }
-  ]
+  "blogs": []
 }

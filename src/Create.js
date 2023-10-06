@@ -19,9 +19,9 @@ const Create = () => {
         headers: {'Content-type': "application/json" },
         body: JSON.stringify(blog)
       }).then(() => {
-        alert("Dodano nowego bloga");
+        alert("Dodano nowe zadanie");
         setIsPending(false);
-        history.go(-1);
+        history.push('/');
       })
     }
     return (  
@@ -37,7 +37,7 @@ const Create = () => {
         />
         <label>Opis zadania:</label>
         <textarea
-          required
+          
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>

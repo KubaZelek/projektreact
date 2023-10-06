@@ -32,6 +32,7 @@ body {
   text-align: center;
   margin: 0.5rem;
   padding: 2rem;
+  border-radius: 30px;
 }
 .link:hover, .linkp:hover{
   background-color: white;
@@ -52,7 +53,16 @@ body {
 .linkp{
   height: 100%;
 }
-
+.btn-done{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.btn-done span{
+  margin-right: 10px;
+}
 
 .bh1{
   
@@ -64,11 +74,22 @@ body {
 
 
 /* Blog-details */
-
-.bd.h2{
-  color: green;
+.check{
+  width: 120%;
 }
 
+.blog-details{
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.bh2{
+  font-size: 3rem;
+}
+.blog-details button{
+  padding: 2rem;
+  font-size: 2rem;
+}
 .personForPati{
   color: #f1356d;
   font-weight: bold;
@@ -122,8 +143,8 @@ button {
 .loading-spinner {
   width: 150px;
   height: 150px;
-  border: 10px solid #f3f3f3; /* Light grey */
-  border-top: 10px solid #383636; /* Black */
+  border: 10px solid #f3f3f3; 
+  border-top: 10px solid #383636; 
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
   
