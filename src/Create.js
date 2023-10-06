@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
@@ -7,6 +8,8 @@ const Create = () => {
 
     const [isPending, setIsPending] = useState(false)
     
+  const history = useHistory();
+
     const handleSubmit = (e) => {
       setIsPending(true);
       e.preventDefault();
@@ -18,20 +21,21 @@ const Create = () => {
       }).then(() => {
         alert("Dodano nowego bloga");
         setIsPending(false);
+        history.go(-1);
       })
     }
     return (  
         <div className="create">
-      <h2>Add a New Blog</h2>
+      <h2>Dodaj zadanie</h2>
       <form onSubmit={handleSubmit}>
-        <label>Blog title:</label>
+        <label>Tytuł zadania:</label>
         <input 
           type="text" 
           required 
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <label>Blog body:</label>
+        <label>Opis zadania:</label>
         <textarea
           required
           value={body}

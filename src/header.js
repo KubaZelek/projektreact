@@ -7,11 +7,13 @@ const Header = () => {
                 Małżeńska lista obowiązków
             </h1>
             <div className="links">
-        <Link to="/">Strona główna</Link>
-        <Link to="/create" >Dodaj zadanie</Link>
+        <Link className="link" to="/"><p className='linkp'>Strona główna</p></Link>
+        <Link className="link" to="/create" ><p className='linkp'>Dodaj zadanie</p></Link>
       </div>
         </div>
      );
 }
  
 export default Header;
+
+

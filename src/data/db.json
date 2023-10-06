@@ -1,34 +1,6 @@
 {
   "blogs": [
     {
-      "title": "Test1",
-      "body": "Testowy opis1",
-      "author": "Żelek",
-      "personFor": "Pati",
-      "id": 1
-    },
-    {
-      "title": "Test2",
-      "body": "Testowy opis2",
-      "author": "Pati",
-      "personFor": "Żelek",
-      "id": 2
-    },
-    {
-      "title": "SQWWQ",
-      "body": "qsqqsqsq",
-      "author": "Zelek",
-      "personFor": "Pati",
-      "id": 3
-    },
-    {
-      "title": "swqwd",
-      "body": "efewfw",
-      "author": "Pati",
-      "personFor": "Zelek",
-      "id": 4
-    },
-    {
       "title": "qsq",
       "body": "dqw",
       "author": "Pati",
@@ -36,25 +8,18 @@
       "id": 5
     },
     {
-      "title": "dw",
-      "body": "fwf",
-      "author": "Pati",
-      "personFor": "Pati",
-      "id": 6
-    },
-    {
       "title": "DWDWD",
-      "body": "fewwewf",
+      "body": "ffwf",
       "author": "Zelek",
       "personFor": "Pati",
-      "id": 7
+      "id": 12
     },
     {
-      "title": "Dupa",
-      "body": "rshsh",
+      "title": "Siemano",
+      "body": "Wyrzuć smieci",
       "author": "Pati",
-      "personFor": "Pati",
-      "id": 8
+      "personFor": "Zelek",
+      "id": 13
     }
   ]
 }

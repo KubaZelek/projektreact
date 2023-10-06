@@ -11,7 +11,11 @@ const BlogList = ({blogs, title}) => {
                 <div className='blog' key={blog.id}>
                      <Link to={`/blogs/${blog.id}`}>
             <h2>{ blog.title }</h2>
-            <p>Written by { blog.author }</p>
+         {blog.personFor == "Zelek" &&  <p className='personForZelek'>Zadanie dla: { blog.personFor } </p>}  
+         {blog.personFor == "Pati" &&  <p className='personForPati'>Zadanie dla: { blog.personFor } </p>}  
+
+            <p className='personFromP'>od: {blog.author}</p>
+
           </Link>
                 
                  
